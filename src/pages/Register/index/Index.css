@@ -1,0 +1,8 @@
+.register-all{
+    background: #616161; 
+    background: -webkit-linear-gradient(to right, #9bc5c3, #616161);  
+    background: linear-gradient(to right, #9bc5c3, #616161); 
+    margin:0;
+    display: flex;
+    min-height: 100vh;
+}

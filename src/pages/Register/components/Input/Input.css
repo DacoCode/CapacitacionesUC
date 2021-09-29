@@ -1,0 +1,17 @@
+.input-container-reg{
+position: relative;
+margin: 30px 20px;
+display: grid;
+}
+
+.input-register{
+    padding: .8em 1em;
+    font-family: Georgia;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border: 1px solid #bbb0b0;
+    border-radius: 0.2em;
+
+   
+}

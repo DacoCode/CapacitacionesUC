@@ -1,0 +1,13 @@
+.label-container label{
+    position: relative;
+    color: #C4EEFA ;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}

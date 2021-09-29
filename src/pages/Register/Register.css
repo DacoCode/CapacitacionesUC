@@ -1,0 +1,134 @@
+.register-container{
+    background-color: transparent;
+    right: 0;
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    box-sizing: border-box;
+   
+
+}
+
+.register-container-int{
+    background-color:rgba(255, 255, 255, 1);
+    position: absolute;
+    left: 41%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 80vh;
+    min-height: 98vh;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+
+
+.Title{
+    color: black;
+    font-size: 60px;
+    font-family: Georgia;
+    font-weight: bold;
+    font-style: italic;
+    margin: 50px 0 70px;
+    padding-bottom: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-register{
+    background-color: rgba(105, 236, 125, 1);
+    display: grid;
+    margin: 50px auto 20px ;
+    padding: .8em 8em;
+    font-family: Georgia;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border: 1px solid #bbb0b0;
+    border-radius: 0.2em;
+    cursor: pointer;
+   
+   
+}
+
+.button-register:hover{
+    background-color: #058617;
+    transition-duration: 1s;
+    transition-property: font-size;
+    font-size: 20px;
+
+}
+
+.button-register{
+    background-color: rgba(105, 236, 125, 1);;
+    transition-duration: 1s;
+    transition-property: font-size;
+    font-size: 16px;
+}
+
+/* CSS of the image*/
+
+.image-reg{
+    background-color: transparent;
+    position: absolute;
+    left: 27%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 80vh;
+    min-height: 98vh;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.image-uc{
+    position: absolute;
+    width:450px;
+    height:540px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: -20px 25px 30px black;
+    border-radius: 14px;
+    
+}
+
+/*Queries*/
+
+@media screen and (max-width: 1300px) {
+    .register-container-int{
+        min-width: 50vh;
+         min-height: 88vh;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .register-container-int{
+        min-width: 30vh;
+         min-height: 48vh;
+    }
+
+    .Title{
+        font-size: 28px;
+    }
+
+    .button-register{
+        font-size: 11px;
+        padding: .4em 4em;
+        margin: 20px auto 20px ;
+    }
+    .button-register:hover{
+        font-size: 16px;
+    
+    }
+    
+    .button-register{
+        font-size: 11px;
+    }
+    .image-uc{
+        width:250px;
+        height:340px;
+    }
+}
