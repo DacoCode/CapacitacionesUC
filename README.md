@@ -12,3 +12,5 @@ y se abrira en la direccion local: [http://localhost:3000](http://localhost:3000
 
 Se requiere antes de ejecutar o abrir el proyecto revisar que se tenga instalado Node.js y lo correspondiente a React.js.
 
+IS-2
+
