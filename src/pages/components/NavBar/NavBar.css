@@ -1,0 +1,123 @@
+.nav-container{
+    background: #F0F2F0;  
+    background: -webkit-linear-gradient(to right, #000C40, #F0F2F0); 
+    background: linear-gradient(to right, #000C40, #F0F2F0); 
+    height: 90px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-link{
+    color: black;
+    text-decoration:  none;
+}
+
+.logo-nav{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 90px;
+    cursor: default;
+}
+
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item{
+    font-size: 16px;
+    margin: auto 10px;
+    line-height: auto;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 3px;
+    transition: .5s;
+}
+.nav-menu-link:hover{
+    background-color: rgba(0, 0, 0,0.3);
+}
+
+
+.nav-toggle{
+    color: black;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px){
+    .nav-container{
+        height: 70px;      
+    }
+        
+    .logo-nav{
+        font-size: 20px;
+        padding: 0 60px;
+        line-height: 70px;
+    }
+    
+    .nav-menu{
+        flex-direction: column;
+        margin-right: 0;
+        background: #304352;  
+        background: -webkit-linear-gradient(to right, #d7d2cc, #304352);
+        background: linear-gradient(to right, #d7d2cc, #304352); 
+        position: fixed;
+        left: 0;
+        top:58px;
+        width: 100%;
+        align-items: center;
+        padding: 20px 0;
+
+        height: calc(100% - 60px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left 1s;
+    }
+    
+    .nav-menu-item{
+        margin: 0 10px;
+        line-height: 70px;
+
+
+    }
+    
+    .nav-menu-link:hover{
+        background:none;
+        color:  #2073b3;
+        font-weight: bold;
+
+    }
+
+    .nav-toggle{
+        display: block;
+    }
+
+    .nav-menu_visible{
+        left: 0;
+    }
+    
+}
+

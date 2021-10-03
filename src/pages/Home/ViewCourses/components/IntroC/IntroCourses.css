@@ -1,0 +1,43 @@
+.intro-all{
+    background-color: rgba(0,0,0,0.2);
+    top: 90px;
+    right: 0;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.img-intro-container{
+    width: 45%;
+    height: 40vh;
+    background-color: transparent;
+    overflow: hidden;
+    
+}
+.img-intro{
+    width: 100%;
+    height:auto;
+    border-radius: 5px;
+   padding: 20px 0;
+    
+}
+@supports(object-fit: cover){
+    .img-intro{
+      height: 80%;
+      object-fit: cover;
+      object-position: center center;
+    }
+}
+
+.info-intro-container{
+    margin-right: 10%;
+}
+
+.subinfo{
+    font-size: 18px;
+}
+
+

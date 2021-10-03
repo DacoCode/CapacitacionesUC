@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 
 import './Login.css';
 
@@ -13,7 +13,7 @@ const Login = () => {
     //Estados de usuario y contraseña
     const [user, setUser] = useState('');
     const [pwd, setPwd] = useState('');
-
+    const history = useHistory();
     //Funcion para la accion de un solo inpout pero implementando dos y evitar fallas
     function handleChange(name, value) {
         if (name === 'user') {
@@ -29,6 +29,7 @@ const Login = () => {
         let account = { user, pwd }
         if (account) {
             console.log('account: ', account);
+            history.push('/Home');
         }
     };
 

@@ -14,3 +14,7 @@ Se requiere antes de ejecutar o abrir el proyecto revisar que se tenga instalado
 
 IS-2
 
+Dependencias a instalar: 
+
+npm i --save @fortawesome/fontawesome-svg-core  @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome @fortawesome/free-brands-svg-icons
+

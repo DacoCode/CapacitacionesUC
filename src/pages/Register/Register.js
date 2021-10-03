@@ -45,7 +45,6 @@ const NewRegister = () => {
         <>
             <div className='image-reg'>
             <img className='image-uc' src={Image} alt="university Central "/>
-
             </div>
             <div className='register-container'>
 
