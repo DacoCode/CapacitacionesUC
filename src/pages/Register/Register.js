@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 
 import './Register.css';
 import Input from './components/Input/Input';
 import Image from '../../assets/Front-UC.jpg';
+import fetchApi from '../../Server/registerServer.js';
 
-
-const NewRegister = () => {
+const  NewRegister = () => {
 
     //Iniciando los Estados de variables.
     const [name, setName] = useState('');
     const [mail, setMail] = useState('');
     const [number, setNumber] = useState('');
     const [password, setPassword] = useState('');
+    const history = useHistory();
 
     function handleChange(name, value) {
         if (name === 'nameUser') {
@@ -30,15 +32,25 @@ const NewRegister = () => {
     //Funcion para el boton
     function handleSubmit() {
         let userRegister = { name, mail, number, password }
+        const register =  fetchApi(userRegister);
+        console.log(register);
         if (userRegister) {
             console.log('New User is: ', userRegister);
         }
+        if(register){
+            
+             history.push('/');
+         }else{
+             console.log("No se registro");
+        }
+
+     
     }
 
-    console.log('NameUser', name);
-    console.log('Mail', mail);
-    console.log('number', number);
-    console.log('pwd', password);
+    // console.log('NameUser', name);
+    // console.log('Mail', mail);
+    // console.log('number', number);
+    // console.log('pwd', password);
 
 
     return (

@@ -6,7 +6,7 @@ import IntroCourses from './components/IntroC/IntroCourses';
 const ViewCourses = () => {
     return (
         <>
-            <NavBar />
+            <NavBar title='Cursos UC' />
             <IntroCourses />
             <Course />
         </>

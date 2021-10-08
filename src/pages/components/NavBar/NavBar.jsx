@@ -13,12 +13,12 @@ function handleClick() {
     
 }
 
-const NavBar = () => {
+const NavBar = ({ title }) => {
     return (
 
         <div className="nav-container">
             <nav className="nav">
-                <a className="logo-nav">Cursos UC</a>
+                <a className="logo-nav"> { title } </a>
                 <button className="nav-toggle" onClick={handleClick}>
                     <FontAwesomeIcon icon={faBars} />
                 </button>
